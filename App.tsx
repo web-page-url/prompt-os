@@ -89,7 +89,7 @@ const App: React.FC = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight">
-            PROMPT <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 neon-glow">OS</span>
+            PROMPTS <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 neon-glow">OS</span>
           </h1>
           <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light">
             Don't settle for basic outputs. Engineering superior intelligence requires superior inputs.
