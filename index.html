@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prompt Alpha</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #030712;
-        color: #f8fafc;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt OS - Advanced Prompt Engineering Tool</title>
+
+  <!-- Verified SEO for prompts-os.vercel.app -->
+  <meta name="description"
+    content=" Optimize your prompts for Gemini, GPT-4, and Claude. Engineering superior intelligence requires superior inputs. Choose a military-grade framework to structure your raw intent with Prompt OS." />
+  <meta name="keywords"
+    content="prompt engineering, prompt os, AI tools, Gemini, GPT-4, Claude, prompt optimization, writing tool, productivity" />
+  <meta name="author" content="Prompt OS Team" />
+  <meta name="theme-color" content="#030712" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://prompts-os.vercel.app/" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Prompt OS",
+      "url": "https://prompts-os.vercel.app/",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "description": "Advanced Prompt Engineering Tool to optimize prompts for Gemini, GPT-4, and Claude.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Prompt OS Team"
       }
-      h1, h2, h3, .brand-font {
-        font-family: 'Orbitron', sans-serif;
-      }
-      .tech-font {
-        font-family: 'Rajdhani', sans-serif;
-      }
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0f172a;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #334155;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #475569;
-      }
-      
-      .neon-glow {
-        box-shadow: 0 0 10px rgba(6, 182, 212, 0.5), 0 0 20px rgba(6, 182, 212, 0.3);
-      }
-      
-      .framework-card-bg {
-        background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
-        backdrop-filter: blur(10px);
-      }
-    </style>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    }
+  </script>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prompts-os.vercel.app/" />
+  <meta property="og:title" content="Prompt OS - Advanced Prompt Engineering Tool" />
+  <meta property="og:description"
+    content="Optimize your prompts for Gemini, GPT-4, and Claude. Engineering superior intelligence requires superior inputs. Choose a military-grade framework to structure your raw intent." />
+  <meta property="og:image" content="https://prompts-os.vercel.app/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://prompts-os.vercel.app/" />
+  <meta property="twitter:title" content="Prompt OS - Advanced Prompt Engineering Tool" />
+  <meta property="twitter:description"
+    content="Optimize your prompts for Gemini, GPT-4, and Claude. Engineering superior intelligence requires superior inputs. Choose a military-grade framework to structure your raw intent." />
+  <meta property="twitter:image" content="https://prompts-os.vercel.app/og-image.jpg" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #030712;
+      color: #f8fafc;
+    }
+
+    h1,
+    h2,
+    h3,
+    .brand-font {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .tech-font {
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+
+    .neon-glow {
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.5), 0 0 20px rgba(6, 182, 212, 0.3);
+    }
+
+    .framework-card-bg {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
